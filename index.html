@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raze</title>
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="dist/flickity/flickity.min.css">
   <link href="dist/output.css" rel="stylesheet">
 </head>
 
@@ -136,18 +136,18 @@
     <div id="projects" class="my-20 border border-gray-500">
     </div>
 
-    <section>
-      <h1 class="text-3xl font-semibold text-center text-white capitalize lg:text-4xl">My Projects
-        <!-- Flickity HTML init -->
-        <div class="py-20 carousel px-5  transition ease-in-out delay-150 hover:scale-110 duration-200"
-          data-flickity='{ "autoPlay": true, "wrapAround": true }'>
-          <img src="img/balibaik.png" style="width: 66%;" alt="balibaik" class="rounded-lg shadow-2xl">
-          <img src="img/razecell.png" style="width: 66%;" alt="razecell" class="rounded-lg shadow-2xl">
-          <img src="img/balibaik.png" style="width: 66%;" alt="balibaik" class="rounded-lg shadow-2xl">
-          <img src="img/razecell.png" style="width: 66%;" alt="razecell" class="rounded-lg shadow-2xl">
-          <img src="img/balibaik.png" style="width: 66%;" alt="balibaik" class="rounded-lg shadow-2xl">
-          <!-- </div> -->
-        </div>
+    <section
+      class="relative container py-6 mx-auto mt-6 break-words bg-slate-800 w-full mb-6 shadow-lg rounded-xl mt-16 transition ease-in-out delay-150 hover:scale-110 duration-200">
+      <div class="text-center border-b border-slate-600">
+        <h3 class="text-2xl text-white font-bold leading-normal mb-6 uppercase">my projects</h3>
+      </div>
+      <div class="mt-6"
+        data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true, "wrapAround": true }'>
+        <img src="img/balibaik.png" alt="balibaik" class="w-screen md:w-7/12 rounded-lg shadow-2xl">
+        <img src="img/razecell.png" alt="razecell" class="w-screen md:w-7/12 rounded-lg shadow-2xl">
+        <img src="img/balibaik.png" alt="balibaik" class="w-screen md:w-7/12 rounded-lg shadow-2xl">
+        <img src="img/razecell.png" alt="razecell" class="w-screen md:w-7/12 rounded-lg shadow-2xl">
+      </div>
     </section>
 
     <div id="teams" class="my-20 border border-gray-500">
@@ -441,8 +441,8 @@
       </div>
     </div>
   </footer>
-  <script src="dist/index.min.js"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="dist/tw-elements/index.min.js"></script>
+  <script src="/dist/flickity/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
